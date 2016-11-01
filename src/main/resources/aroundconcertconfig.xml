@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
+	<bean id="audience" class="concert.AroundAudienceXML"/>
+	
+	<bean id="performance" class="concert.SuccessPerformance" />
+	
+	<aop:config>
+		<aop:aspect ref="audience">
+			<aop:pointcut expression="execution(* concert.Performance.perform(..))" id="successperformance"/>
+			
+			<!-- AroundAudienceXML 클래스의 watchPerformance 메서드를 id가 successperformance인 포인트컷에 적용. -->
+			<aop:around method="watchPerformance" pointcut-ref="successperformance" />
+			
+		</aop:aspect>
+	</aop:config>
+
+</beans>
