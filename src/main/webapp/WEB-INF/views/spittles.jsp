@@ -7,9 +7,11 @@
 	<title>Spittr</title>
 	</head>
 <body>
-	<h1>Welcome to Spittr</h1>
-	
-	<a href="<c:url value="" />">Spittles</a> | 
-	<a href="<c:url value="" />">Register</a>
+	<div class="spittleView">
+		<div class="spittleMessage"><c:out value="${spittle.message }" /></div>
+		<div>
+			<span class="spittleTime"><c:out value="${spittle.time }" /></span>
+		</div>
+	</div>
 </body>
 </html>

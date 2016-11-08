@@ -21,6 +21,7 @@ ext{
 	javaVersion = '1.8'
 	springVersion = '4.3.3.RELEASE'
 	servletVersion = '3.1.0'
+	hibernateVersion = '5.2.4.Final'
 }
 
 
@@ -59,6 +60,12 @@ dependencies {
 	compile group: 'org.springframework', name: 'spring-webmvc', version: "${springVersion}"
 	// https://mvnrepository.com/artifact/org.springframework/spring-jdbc
 	compile group: 'org.springframework', name: 'spring-jdbc', version: "${springVersion}"
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-validator
+	compile group: 'org.hibernate', name: 'hibernate-validator', version: "${hibernateVersion}"
+	// https://mvnrepository.com/artifact/com.h2database/h2
+	compile group: 'com.h2database', name: 'h2', version: '1.4.193'
+	
+	
 	
 
     // Declare the dependency for your favourite test framework you want to use in your tests.
@@ -68,5 +75,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
 	// https://mvnrepository.com/artifact/org.springframework/spring-test
 	testCompile group: 'org.springframework', name: 'spring-test', version: "${springVersion}"
+	// https://mvnrepository.com/artifact/org.mockito/mockito-all
+	testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+	
 	
 }
