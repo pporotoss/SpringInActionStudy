@@ -22,6 +22,7 @@ ext{
 	springVersion = '4.3.3.RELEASE'
 	servletVersion = '3.1.0'
 	hibernateVersion = '5.2.4.Final'
+	tilesVersion = '3.0.7'
 }
 
 
@@ -64,8 +65,12 @@ dependencies {
 	compile group: 'org.hibernate', name: 'hibernate-validator', version: "${hibernateVersion}"
 	// https://mvnrepository.com/artifact/com.h2database/h2
 	compile group: 'com.h2database', name: 'h2', version: '1.4.193'
-	
-	
+	// https://mvnrepository.com/artifact/org.apache.tiles/tiles-core
+	compile group: 'org.apache.tiles', name: 'tiles-core', version: "${tilesVersion}"
+	// https://mvnrepository.com/artifact/org.apache.tiles/tiles-jsp
+	compile group: 'org.apache.tiles', name: 'tiles-jsp', version: "${tilesVersion}"
+	// https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring4
+	compile group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '3.0.2.RELEASE'
 	
 
     // Declare the dependency for your favourite test framework you want to use in your tests.

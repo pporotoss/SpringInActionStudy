@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Spittr</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/resources/style.css}" />
+</head>
+<body>
+	<div id="header" th:include="include/page :: header"></div>
+	<h1>Welcome to Spittr</h1>
+	<a th:href="@{/spittles}">Spittles</a>
+	<a th:href="@{/spitter/register}">Register</a>
+	<div id="header" th:include="include/page :: copy"></div>
+</body>
+</html>

@@ -26,6 +26,15 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/com.h2database/h2/1.4.193/369b51e2090c4e6714d9d5e42010b6330c2cea26/h2-1.4.193.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-core/3.0.7/7dea454df03ef7f736f373252a3b535c5e31f3d9/tiles-core-3.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-jsp/3.0.7/4be214eadec0eb2d83d8269d2571153408c8aab1/tiles-jsp-3.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf-spring4/3.0.2.RELEASE/9e99f78f944b58e491faa930f730709f80450892/thymeleaf-spring4-3.0.2.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.1.7/7873092d39ef741575ca91378a6a21c388363ac8/logback-core-1.1.7.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
@@ -62,7 +71,46 @@
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.1.0/dbbd699a1486ad0f2ed6f5af6cfed66acacb9056/classmate-1.1.0.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-api/3.0.7/9eb860617d1a146290a7944a79e8a3bfb6387a9d/tiles-api-3.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.0/3dbd8a76683cd563583a2c78c356ad8b8acf38bf/commons-digester-2.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.7.6/ab1648fe1dd6f1e5c2ec6d12f394672bb8c1036a/jcl-over-slf4j-1.7.6.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-servlet/3.0.7/c1bc425edab2dc6fa504d50bfd6b2fa6229ac301/tiles-servlet-3.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-template/3.0.7/225c145d639deb1abf2e89089d0c530c8853cd2b/tiles-template-3.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-jsp/1.0.6/ab15a6139647490e56eedcfce45e0f0cb5b32f85/tiles-request-jsp-1.0.6.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.thymeleaf/thymeleaf/3.0.2.RELEASE/f0758d924815a8ada59ecf3b34f9bb6c2c2441b7/thymeleaf-3.0.2.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
 		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-api/1.0.6/159cd498ce20e904516e0cad7f0c2fd9f729e746/tiles-request-api-1.0.6.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/c651d5103c649c12b20d53731643e5fffceb536/commons-beanutils-1.8.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-servlet/1.0.6/5558c703634ebf7cf47af2d2a50245eecee9ad74/tiles-request-servlet-1.0.6.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-autotag-core-runtime/1.2/100bd3cae1a5debf9afb4ef5c8b36c508d06326/tiles-autotag-core-runtime-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.attoparser/attoparser/2.0.1.RELEASE/3e95f3d9fa8095171d96cd4a57d6f3caa51982dc/attoparser-2.0.1.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/KWON/.gradle/caches/modules-2/files-2.1/org.unbescape/unbescape/1.1.4.RELEASE/1ef1371149efc31d72d35dc290cf16c1a4736a12/unbescape-1.1.4.RELEASE.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 	</wb-module>
