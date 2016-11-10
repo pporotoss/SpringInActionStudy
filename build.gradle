@@ -71,6 +71,9 @@ dependencies {
 	compile group: 'org.apache.tiles', name: 'tiles-jsp', version: "${tilesVersion}"
 	// https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring4
 	compile group: 'org.thymeleaf', name: 'thymeleaf-spring4', version: '3.0.2.RELEASE'
+	// https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload
+	compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3.2'
+	
 	
 
     // Declare the dependency for your favourite test framework you want to use in your tests.

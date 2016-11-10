@@ -1,6 +1,8 @@
 package spittr.config;
 
 import javax.servlet.Filter;
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletRegistration.Dynamic;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
@@ -42,5 +44,14 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 	protected String getServletName() {	// DispatcherServlet의 이름 설정.
 		return super.getServletName();	// 기본값은 dispatcherServlet 반환.
 	}
-
+	
+	@Override
+	protected void customizeRegistration(Dynamic registration) {	// DispatcherServlet에 추가설정.
+		// 서블릿 제공 멀티파트 리졸버 사용시 설정.
+		registration.setMultipartConfig(new MultipartConfigElement("", 2097152, 4194304, 0));	
+													// 임시저장폴더, 업로드 파일 최대 크기, 전체 멀티파트 요청의 최대 크기, 임시 저장 위치에 쓰지 않고 업로드 할 수 있는 최대 크기.
+													// 임시저장 폴더는 필수로 설정해야 한다.
+		
+	}
+	
 }

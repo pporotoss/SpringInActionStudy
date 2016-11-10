@@ -1,10 +1,16 @@
 package spittr.config;
 
+import java.io.IOException;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.multipart.support.StandardServletMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -59,10 +65,27 @@ public class WebConfig extends WebMvcConfigurerAdapter{	// WebMvc 설정용 클�
 		return templateResolver;
 	}
 	
+	@Bean
+	public MultipartResolver mulitpartResolver() throws IOException {
+		StandardServletMultipartResolver multipartResolver = new StandardServletMultipartResolver();	// 서블릿 3.0 이상 지원.
+		//CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();	// CommonsFileUpload 이용.
+		//multipartResolver.setUploadTempDir(new FileSystemResource("/tmp/spittr/uploads"));	// 임시저장 폴더. 
+																																	// 서블릿 컨테이너의 임시디렉토리가 기본값.
+		//**  FileSystemResource : 프로젝트 폴더 최상위가 루트폴더.
+		//**  ClassPathResource : src 폴더가 루트 폴더.
+		//multipartResolver.setMaxUploadSize(2097152);
+		//multipartResolver.setMaxInMemorySize(0);
+		
+		return multipartResolver;
+	}
+	
+	
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {	// 정적 콘텐츠 처리 설정.
 		configurer.enable();		// 정적 리소스의 처리를 직접하지 않고 서블릿 컨테이너에게 위임한다.
 	}
+	
+	
 	/*@Bean
 	public ViewResolver viewResolver() {
 		return new TilesViewResolver();	// 아파치 타일즈용 뷰 리졸버 설정.

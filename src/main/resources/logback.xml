@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"><!-- 콘솔에 표시될 로그 설정. -->
+		<!-- encoders are by default assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern><!-- 로그 패턴 설정. -->
+		</encoder>
+	</appender>
+	
+	<!-- 패키지별 로그 표시 등급 설정 -->
+	<logger name="org.springframework" level="info"/>
+	
+	<logger name="org.thymeleaf.TemplateEngine" level="info"/>
+	
+	<logger name="org.hibernate" level="info" />
+	
+	<!-- 기본 로그 표시 등급 설정. -->
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>
